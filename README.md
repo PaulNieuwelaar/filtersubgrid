@@ -2,7 +2,7 @@
 
 ![](https://user-images.githubusercontent.com/14048382/30043453-8f22b75c-924b-11e7-8e24-461008e20e9d.png)
 
-In this example, I've added an "Accounts" sub-grid to my Account, configured to show "All Record Types" rather than "Only Related Records". The using this JavaScript we're filtering the sub-grid to display all the Accounts that the Primary Contact is a Primary Contact of (which will obviously include the current account). This function can be added to the form OnLoad and Primary Contact field OnChange to ensure the sub-grid is updated when the Primary Contact changes as well.
+In this example, I've added an "Accounts" sub-grid to my Account, configured to show "All Record Types" rather than "Only Related Records". The using this JavaScript we're filtering the sub-grid to display all the Accounts that the Primary Contact is a Primary Contact of (which will obviously include the current account). This function can be added to the form OnLoad and Primary Contact field OnChange to ensure the sub-grid is updated when the Primary Contact changes as well.  
 NOTE: I've found it best to create a custom view to be used as the default sub-grid view, and to customize this view to display no results by default (using a filter such as: Name equals "X" and Name does not equal "X" – which will always return no results), this way you won't see incorrect data initially on load before the JavaScript kicks in.
 
 ```javascript
