@@ -18,7 +18,7 @@ function filterSubGrid(subgridName, fetchXml, attempts) {
     subgrid.control.refresh();
 }
 
-// Filters an accounts subgrid by the primary contact ID - this function is inique for your requirements
+// Filters an accounts subgrid by the primary contact ID - this function is unique for your requirements
 function filterAccountGrid() {
     // Get the dynamic contactId to filter on
     var contactValue = Xrm.Page.getAttribute("primarycontactid").getValue();
